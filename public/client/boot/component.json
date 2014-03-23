@@ -1,0 +1,19 @@
+{
+  "name": "boot",
+  "description": "Main app boot component",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "boot.css"
+  ],
+  "images": [
+  ],
+  "local": [
+  ],
+  "dependencies": {
+    "component/dom": "*",
+    "component/simple-grid": "*",
+    "necolas/normalize.css": "*"
+  }
+}

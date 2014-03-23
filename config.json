@@ -1,0 +1,10 @@
+{
+  "salt": "my salt",
+  "mysql" : {
+    "host": "localhost",
+    "user": "chemzqm",
+    "database": "assignme",
+    "password": "formv!ne",
+    "post": "3306"
+  }
+}
