@@ -31,10 +31,12 @@ module.exports = function (app) {
     yield next;
   }
 
+  app.get('/me', user.me);
   app.post('/login', user.login);
   app.get('/logout', user.logout);
   app.post('/forgetpass', user.forgetpass);
   app.post('/resetpass', user.resetpass);
+  app.post('/changepass', checkUser, user.changepass);
 
   app.get('/users', checkUser, user.list);
   app.post('/user', checkAdmin, user.post);
