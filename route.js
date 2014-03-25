@@ -33,7 +33,7 @@ module.exports = function (app) {
 
   app.get('/me', user.me);
   app.post('/login', user.login);
-  app.get('/logout', user.logout);
+  app.post('/logout', user.logout);
   app.post('/forgetpass', user.forgetpass);
   app.post('/resetpass', user.resetpass);
   app.post('/changepass', checkUser, user.changepass);
