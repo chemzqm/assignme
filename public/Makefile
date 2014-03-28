@@ -1,5 +1,5 @@
-
-PATH := ./node_modules/.bin:$(PATH)
+SHELL := /usr/local/bin/bash
+PATH := ../node_modules/.bin:$(PATH)
 SRC = $(wildcard client/*/*.js)
 CSS = $(wildcard client/*/*.css)
 HTML = $(wildcard client/*/*.html)
@@ -12,6 +12,9 @@ build: components $(SRC) $(CSS) $(TEMPLATES)
 
 components: $(COMPONENT)
 	@component install --dev
+
+check: $(SRC)
+	@syntax-check $?
 
 %.js: %.html
 	@component convert $<
