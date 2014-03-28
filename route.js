@@ -6,6 +6,12 @@ var project = require('./lib/project');
 var issue = require('./lib/issue');
 var project_user = require('./lib/project_user');
 var comment = require('./lib/comment');
+var parse = require('co-busboy');
+var saveTo = require('save-to');
+var os = require('os');
+var path = require('path');
+var uid = require('uid');
+
 
 var cache = process.env.NODE_ENV === 'production';
 
@@ -30,6 +36,22 @@ module.exports = function (app) {
     if (!user.admin) this.throw(403);
     yield next;
   }
+
+  function* saveFile() {
+    var parts = parse(this);
+    var tmpdir = path.join(path.join(__dirname, 'public/upload'), uid());
+    yield fs.mkdir(tmpdir);
+    var files = [];
+    var part;
+    while (part = yield parts) {
+      var file = path.join(tmpdir, part.filename)
+      files.push(file.replace(path.join(__dirname, 'public'), ''));
+      yield saveTo(part, file);
+    }
+    this.body = files;
+  }
+
+  app.post('/upload', saveFile);
 
   app.get('/me', user.me);
   app.post('/login', user.login);
