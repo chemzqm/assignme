@@ -24,16 +24,16 @@ app.use(_.favicon());
 app.use(error());
 app.use(_.compress());
 app.use(_.responseTime());
-app.use(_.etag());
 app.use(_.body());
 app.use(_.conditionalGet());
+app.use(_.etag());
 app.use(_.sess({
   key: 'assign.pid',
   cookie: {path: '/', httpOnly: true, maxAge: ms('30d')},
   store: redisStore(config.redis)
 }))
 app.use(liveload(__dirname, {
-  excludes: ['lib', 'client']
+  excludes: ['lib', 'client', 'components']
 }))
 app.use(filter());
 //this.env
