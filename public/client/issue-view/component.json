@@ -1,0 +1,16 @@
+{
+  "name": "issue-view",
+  "scripts": [
+    "index.js"
+  ],
+  "templates": [
+    "template.html"
+  ],
+  "styles": [
+  ],
+  "images": [
+  ],
+  "locals": [],
+  "dependencies": {
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "project-view",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+  ],
+  "images": [
+  ],
+  "locals": [],
+  "dependencies": {
+  }
+}

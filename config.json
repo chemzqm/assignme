@@ -1,4 +1,6 @@
 {
+  "name": "assignme",
+  "keys": ["assignme", "e3@143!#@!"],
   "salt": "my salt",
   "mysql" : {
     "host": "localhost",

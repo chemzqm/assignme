@@ -1,0 +1,18 @@
+{
+  "name": "model",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [],
+  "images": [],
+  "locals": [
+    "handle"
+  ],
+  "dependencies": {
+    "chemzqm/notice": "0.0.4",
+    "component/model": "0.1.2",
+    "component/querystring": "1.3.0",
+    "matthewmueller/array": "0.4.3",
+    "chemzqm/ago": "0.0.3"
+  }
+}

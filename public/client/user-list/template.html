@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <a class="create btn btn-primary" href="/user/new">创建新用户</a>
+    <input class="input" type="text" placeholder="过滤">
+  </div>
+  
+  <div class="user-list">
+    <div class="user">
+      <img src="{icon}" alt="{email}" height="50" width="50">
+      <div>{name}</div>
+      <div>admin: {admin ? 'true' : 'false'}</div>
+      <div>{ago}</div>
+      <a href="#" on-click="destroy">remove</a>
+      <a data-href="/user/{id}/edit">update</a>
+    </div>
+  </div>
+</div>

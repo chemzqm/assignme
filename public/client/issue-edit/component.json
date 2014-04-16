@@ -1,0 +1,15 @@
+{
+  "name": "issue-edit",
+  "scripts": [
+    "index.js"
+  ],
+  "templates": [
+    "template.html"
+  ],
+  "styles": [],
+  "images": [],
+  "locals": [],
+  "dependencies": {
+    "component/domify": "1.2.2"
+  }
+}

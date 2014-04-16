@@ -1,14 +1,13 @@
 {
-  "name": "dianjoy",
-  "description": "dianjoy",
+  "name": "assignme",
+  "description": "assignme",
   "version": "0.0.1",
-  "local": [
+  "locals": [
     "boot"
   ],
   "paths": [
     "client"
   ],
-  "dependencies": {
-  },
+  "dependencies": { },
   "remotes": []
 }

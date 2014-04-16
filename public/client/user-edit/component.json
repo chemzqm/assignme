@@ -1,0 +1,25 @@
+{
+  "name": "user-edit",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [],
+  "templates": [
+    "template.html"
+  ],
+  "images": [],
+  "locals": [
+    "model"
+  ],
+  "dependencies": {
+    "component/domify": "1.2.2",
+    "yuehu/switch": "*",
+    "component/upload": "0.1.1",
+    "chemzqm/serialize": "0.0.1",
+    "segmentio/validate-form": "0.9.1",
+    "component/events": "1.0.6",
+    "visionmedia/minstache": "1.1.0",
+    "visionmedia/page.js": "1.3.7",
+    "chemzqm/notice": "0.0.4"
+  }
+}

@@ -1,0 +1,18 @@
+<div>
+  <p>
+    <input id="create" class="input" type="text" placeholder="创建项目">
+  </p>
+  <p>
+    <input id="filter" class="input" type="text" placeholder="过滤">
+  </p>
+  <div class="project-list">
+    <div class="project">
+      <div>名称: {name}</div>
+      <div>更新时间: {ago}</div>
+      <div>创建人: {creater_name}</div>
+      <a href="#" on-click="destroy">remove</a>
+      <a href="/project/{id}/edit">update</a>
+      <a href="/project/{id}">view</a>
+    </div>
+  </div>
+</div>

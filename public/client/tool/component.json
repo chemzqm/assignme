@@ -1,0 +1,11 @@
+{
+  "name": "tool",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "locals": [
+  ],
+  "dependencies": {
+  }
+}

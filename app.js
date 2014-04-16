@@ -14,8 +14,8 @@ var error = require('koa-error')
 
 app.proxy = true;
 app.outputErrors = true;
-app.name = 'assignme';
-app.keys = ['assignme', 'ha!@$%'];
+app.name = config.name;
+app.keys = config.keys;
 
 if (env !== 'test') {
   app.use(_.logger());

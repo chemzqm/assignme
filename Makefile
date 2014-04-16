@@ -9,5 +9,9 @@ test:
 		--reporter spec \
 		--bail \
 
+install:
+	@npm install
+	@mkdir -p public/upload
 
-.PHONY: start test
+
+.PHONY: start test install

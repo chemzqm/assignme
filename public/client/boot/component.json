@@ -7,13 +7,27 @@
   "styles": [
     "boot.css"
   ],
-  "images": [
-  ],
-  "local": [
+  "images": [],
+  "locals": [
+    "handle",
+    "main",
+    "issue-create",
+    "issue-edit",
+    "issue-view",
+    "project-list",
+    "project-edit",
+    "project-view",
+    "user-create",
+    "user-edit",
+    "user-list",
+    "user-view"
   ],
   "dependencies": {
-    "component/dom": "*",
-    "component/simple-grid": "*",
-    "necolas/normalize.css": "*"
+    "component/event": "0.1.3",
+    "component/querystring": "1.3.0",
+    "visionmedia/superagent": "0.17.0",
+    "visionmedia/page.js": "1.3.7",
+    "component/simple-grid": "0.0.1",
+    "necolas/normalize.css": "3.0.1"
   }
 }
