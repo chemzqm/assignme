@@ -12,7 +12,6 @@ var os = require('os');
 var path = require('path');
 var uid = require('uid');
 
-
 var cache = process.env.NODE_ENV === 'production';
 
 module.exports = function (app) {
